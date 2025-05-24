@@ -8,18 +8,23 @@ import { Copilot } from "./pages/Copilot";
 import { SidebarMd } from "./components/sidebar/SidebarMd";
 import { Sidebar } from "./components/Sidebar";
 export default function App() {
+
   return (
     <>
-        <div className={"large-screens hidden md:block h-screen  "}>
-            <Sidebar />
+        <div className={"medium-screens h-screen  "}>
+            <Inbox />
+            <Copilot />
+        </div>
+        <div className={"large-screens  h-screen   "}>
+           <span className={"lg"}><Sidebar  /></span>
             <Inbox />
             <Chat />
             <Copilot />
             {/*<Details />*/}
         </div>
-        <div className={"small-screens h-screen  "}>
-           <SidebarMd />
-        </div>
+        {/*<div className={"small-screens h-screen  "}>*/}
+        {/*   <SidebarMd />*/}
+        {/*</div>*/}
 
 
     </>

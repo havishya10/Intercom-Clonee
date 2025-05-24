@@ -1,8 +1,13 @@
+import React from "react";
 import {IoIosArrowDown} from "react-icons/io";
 import {Message} from "../components/Message";
 import {Avatar} from "../components/Avatar";
 import {SidebarMd} from "../components/sidebar/SidebarMd";
+
+import { Chat } from "./Chat";
+
 export function Inbox() {
+
   const inboxMessages = [
     {
       avatar: <Avatar imageNo={1} size={8} />,
@@ -35,10 +40,23 @@ export function Inbox() {
       time: "20m",
     },
   ];
+  function openChat() {
+
+    const inboxEl = document.getElementById("inbox");
+    inboxEl.classList.toggle("hidden")
+    const chatEl = document.getElementById("chat-view");
+    chatEl.classList.toggle("hidden")
+  }
+
   return (
-    <div className={" flex flex-col gap-3 overflow-auto bg-[#fafaf6] border border-gray-200 shadow-sm rounded-lg "}>
+      <>
+        <div id={"chat-view"} className={"hidden h-screen"}>
+          <Chat />        </div>
+
+
+    <div id={"inbox"} className={" flex flex-col gap-3 overflow-auto bg-[#fafaf6] border border-gray-200 shadow-sm rounded-lg " }>
       <div className="flex flex-row items-center shadow-sm ">
-        <div className={"md:hidden"}>
+        <div className={"sm"}>
           <SidebarMd/>
         </div>
         <h1 id="inbox-type" className="font-bold text-lg p-3">
@@ -66,7 +84,9 @@ export function Inbox() {
         </div>
         <ul className="inbox-messages flex-1 overflow-auto">
           {inboxMessages.map((message, index) => (
-            <li key={index} className="py-2">
+            <li
+                onClick={() => openChat()}
+                key={index} className="py-2">
               <Message
                 avatar={message.avatar}
                 name={message.name}
@@ -78,5 +98,6 @@ export function Inbox() {
         </ul>
       </div>
     </div>
-  );
+      </>
+        );
 }

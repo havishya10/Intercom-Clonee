@@ -16,9 +16,50 @@ body {
   font-size: 1.25rem;
   cursor: pointer;
 }
-
-.large-screens {
-  display: grid;
-
-  grid-template-columns: 15% 20% 2fr 400px;
+.lg {
+  display: none;
 }
+.large-screens , .medium-screens{
+  display: none;
+}
+@media (min-width: 768px) {
+  .medium-screens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 990px) {
+  .sm {
+    display: block;
+  }
+  .medium-screens {
+    display: none;
+  }
+  .large-screens {
+    display: grid;
+    grid-template-columns: 25% 45% 30%;
+  }
+
+}
+
+
+@media (min-width: 1368px) {
+  .large-screens {
+    display: grid;
+    grid-template-columns: 15% 20% 2fr 25%;
+  }
+  .medium-screens {
+    display: none;
+  }
+  .sm {
+    display: none;
+  }
+  .lg {
+    display: block;
+  }
+}
+
+
+
+
+
