@@ -10,13 +10,15 @@ import { Sidebar } from "./components/sidebar";
 export default function App() {
   return (
     <>
-        <div className={"large-screens h-[97vh]  "}>
+        <div className={"large-screens hidden md:block h-screen  "}>
             <Sidebar />
             <Inbox />
             <Chat />
             <Copilot />
             {/*<Details />*/}
-
+        </div>
+        <div className={"small-screens h-screen  "}>
+           <SidebarMd />
         </div>
 
 
