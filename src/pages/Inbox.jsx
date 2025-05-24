@@ -11,19 +11,19 @@ export function Inbox() {
       time: "2m",
     },
     {
-      avatar: <Avatar size={7} imageNo={2} />,
+      avatar: <Avatar size={8} imageNo={2} />,
       name: "John Doe",
       msg: "Can you please check my ticket?",
       time: "9m",
     },
     {
-      avatar: <Avatar size={7} imageNo={3} />,
+      avatar: <Avatar size={8} imageNo={3} />,
       name: "Jane Smith",
       msg: "I have a question about my subscription",
       time: "12m",
     },
     {
-      avatar: <Avatar size={7} imageNo={0} />,
+      avatar: <Avatar size={8} imageNo={0} />,
       name: "Michael Johnson",
       msg: "Can you help me with my account?",
       time: "15m",
@@ -36,17 +36,17 @@ export function Inbox() {
     },
   ];
   return (
-    <div>
-      <div className="flex flex-row items-center gap-1 p-1">
+    <div className={" flex flex-col gap-3 overflow-auto bg-[#fafaf6] border border-gray-200 shadow-sm rounded-lg "}>
+      <div className="flex flex-row items-center shadow-sm ">
         <div className={"md:hidden"}>
           <SidebarMd/>
         </div>
-        <h1 id="inbox-type" className="text-xl font-bold">
+        <h1 id="inbox-type" className="font-bold text-lg p-3">
           Inbox
         </h1>
       </div>
-      <div className=" h-screen w-full flex flex-col">
-        <div className="flex flex-row justify-between items-center p-3">
+      <div className="w-full flex flex-col gap-3 p-3">
+        <div className="flex flex-row justify-between items-center ">
           <div className="font-bold text-sm flex flex-row gap-6  items-center">
             <div className="flex  flex-row gap-[.4em] items-center">
               <h3 id="inbox-num">6</h3>
@@ -66,7 +66,7 @@ export function Inbox() {
         </div>
         <ul className="inbox-messages flex-1 overflow-auto">
           {inboxMessages.map((message, index) => (
-            <li key={index} className="p-3">
+            <li key={index} className="py-2">
               <Message
                 avatar={message.avatar}
                 name={message.name}

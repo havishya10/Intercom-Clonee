@@ -8,13 +8,13 @@ import {ChatWindow} from "../components/chat/ChatWindow";
 
 export function Chat() {
   return (
-    <div className="h-screen w-full flex flex-col justify-between">
-      <div className="chat-header flex flex-row justify-between items-center p-3 bg-white shadow-md">
+    <div className="w-full flex bg-white flex-col justify-between">
+      <div className="chat-header flex flex-row justify-between items-center p-3 bg-white shadow-sm">
         <div className="flex flex-row items-center gap-2 ">
           <div>
             <FaArrowLeft />
           </div>
-          <h1 className="text-xl font-bold">Tom Simone</h1>
+          <h1 className="text-lg font-bold">Tom Simone</h1>
         </div>
         <div className="icon flex flex-row gap-4 items-center">
           <IoStarOutline />

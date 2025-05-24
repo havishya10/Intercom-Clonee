@@ -10,7 +10,7 @@ import { Sidebar } from "./components/sidebar";
 export default function App() {
   return (
     <>
-        <div className={"large-screens"}>
+        <div className={"large-screens h-[97vh]  "}>
             <Sidebar />
             <Inbox />
             <Chat />

@@ -12,7 +12,7 @@ export function Avatar({ imageNo, size }) {
         <img
           alt=""
           src={imageUrls[imageNo]}
-          className={`inline-block size-8 rounded-full ring-2 ring-white`}
+          className={`inline-block w-${size} h-${size-1} rounded-full ring-2 ring-white`}
         />
       </div>
     </>

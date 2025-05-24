@@ -1,8 +1,8 @@
 export function Message({ avatar, name, msg, time }) {
   return (
     <>
-      <div className="flex flex-row gap-3 items-center justify-between p-3 hover:bg-gray-100 cursor-pointer">
-        <div className="flex flex-row gap-3 w-[80%] items-center">
+      <div className="flex flex-row  items-center justify-between  hover:bg-gradient-to-r hover:from-[#f0f0eb] hover:to-yellow-50 transition-colors duration-200 rounded-lg p-2 cursor-pointer">
+        <div className="flex flex-row gap-5 w-[80%] items-center">
           {avatar ? (
             <div>{avatar}</div>
           ) : (
@@ -14,10 +14,10 @@ export function Message({ avatar, name, msg, time }) {
           )}
           <div className="">
             <h2 className="font-bold">{name}</h2>
-            <p>{msg.slice(0, 25)}...</p>
+            <p className={"font-medium text-sm text-gray-950"}>{msg.slice(0, 30)}...</p>
           </div>
         </div>
-        <p>{time}</p>
+        <p className={"text-sm text-gray-500"}>{time}</p>
       </div>
     </>
   );

@@ -8,14 +8,14 @@ export function DropDown({ title, dropArray , droplistClasses = "" }) {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center w-full p-2 transition duration-75 rounded-lg"
+        className="flex cursor-pointer items-center w-full p-2 transition duration-75 rounded-lg"
         aria-expanded={isOpen}
       >
-        <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
+        <span className="flex-1 text-sm  text-left rtl:text-right whitespace-nowrap">
           {title}
         </span>
         <svg
-          className={`w-3 h-3 transform transition-transform ${
+          className={`w-2 h-2 transform transition-transform ${
             isOpen ? "rotate-180" : ""
           }`}
           aria-hidden="true"
@@ -34,9 +34,9 @@ export function DropDown({ title, dropArray , droplistClasses = "" }) {
       </button>
 
       {isOpen && (
-        <ul className="py-2 space-y-2 ">
+        <ul>
           {dropArray.map((item, index) => (
-            <li  key={index}>
+            <li clasName={"text-sm"}  key={index}>
               <SidebarItem icon={item.icon} text={item.text} num={item.num} />
             </li>
           ))}

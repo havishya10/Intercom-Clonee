@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Editor } from "primereact/editor";
 
-export function Markdown({ text }) {
+export function Markdown() {
   return (
     <div className="card">
       <Editor
-        className=" h-[180px] md:h-[250px]"
-        style={{ fontSize: "1rem" }}
+
+        style={{ maxHeight: "250px", border: "none", height: "130px" ,  fontSize: "1rem" }}
       />
     </div>
   );

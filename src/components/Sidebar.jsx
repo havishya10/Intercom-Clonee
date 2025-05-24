@@ -63,13 +63,14 @@ export function Sidebar() {
     inboxNum.innerHTML = num;
   }
   return (
-    <div>
+
+      <div className={"flex flex-col gap-3 overflow-auto bg-[#fafaf6] border border-gray-200 shadow-sm rounded-lg font-semibold"}>
       {/* mobile responsive sidebar */}
       {/* <div className="sidebar w-[200px] h-screen"> */}
-      <div className="sidebar-header">
-        <h2>Help Desk</h2>
+      <div className="sidebar-header shadow-sm">
+        <h2 className={"font-bold text-lg p-3"}>Help Desk</h2>
       </div>
-      <div className="sidebar-content">
+      <div className="sidebar-content px-2">
         <ul>
           {sidebarItems.map((item, index) => (
             <li
@@ -81,7 +82,6 @@ export function Sidebar() {
             </li>
           ))}
         </ul>
-        <DropDown title="Teams" dropArray={teams} />
         <DropDown title="Teams" dropArray={teams} />
         <DropDown title="Teams" dropArray={teams} />
       </div>
