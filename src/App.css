@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+}
+.sidebar {
+  padding: 1em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.large-screens {
+  display: grid;
+  grid-template-columns: 15% 20% 2fr 400px;
+}

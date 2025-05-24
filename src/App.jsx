@@ -1,0 +1,25 @@
+import React from "react";
+import "./App.css";
+import {Inbox} from "./pages/Inbox";
+import {Chat} from "./pages/Chat";
+import { Details} from "./pages/Details.jsx";
+import { Copilot } from "./pages/Copilot";
+
+import { SidebarMd } from "./components/sidebar/SidebarMd";
+import { Sidebar } from "./components/sidebar";
+export default function App() {
+  return (
+    <>
+        <div className={"large-screens"}>
+            <Sidebar />
+            <Inbox />
+            <Chat />
+            <Copilot />
+            {/*<Details />*/}
+
+        </div>
+
+
+    </>
+  );
+}
