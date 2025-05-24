@@ -6,7 +6,7 @@ import { Details} from "./pages/Details.jsx";
 import { Copilot } from "./pages/Copilot";
 
 import { SidebarMd } from "./components/sidebar/SidebarMd";
-import { Sidebar } from "./components/sidebar";
+import { Sidebar } from "./components/Sidebar";
 export default function App() {
   return (
     <>
