@@ -11,24 +11,24 @@ This Project was built to replicate the core user interface and user experience 
 **Mobile View**
 
 ![Mobile View Screenshot](https://res.cloudinary.com/dkprubmc9/image/upload/v1748182031/M-1_gytxxn.png)
-*Caption: Mobile view*
+
 
 **Tablet View**
 
 ![Tablet View Screenshot 1](https://res.cloudinary.com/dkprubmc9/image/upload/v1748182258/T-1_mbyb3h.png)
-*Caption: Tablet View.*
+
 
 ![Tablet View Screenshot 2](https://res.cloudinary.com/dkprubmc9/image/upload/v1748182352/T-2_ofjdvb.png)
-*Caption: Tablet View with slide-in SideBar.*
+
 
 **Larger Devices View:**
 
 ![Large Devices View](https://res.cloudinary.com/dkprubmc9/image/upload/v1748182141/L-1_vy2myt.png)
-*Caption: Larger devices View.*
+
 
 
 ![Extra Large Devices View](https://res.cloudinary.com/dkprubmc9/image/upload/v1748181740/D-1_anxvy8.png)
-*Caption: Extra Large Devices View
+
 
 ---
 
