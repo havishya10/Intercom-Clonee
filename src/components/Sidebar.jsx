@@ -56,6 +56,8 @@ export function Sidebar() {
       num: "3",
     },
   ];
+
+
   function handleInbox(title, num) {
     const inboxType = document.getElementById("inbox-type");
     inboxType.innerHTML = title;
