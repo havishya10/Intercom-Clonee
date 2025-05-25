@@ -115,15 +115,6 @@ To run this project locally:
 
 ---
 
-## 📝 Notes on the Assignment
-
-*   This project was completed within the given timeframe.
-*   The primary focus, as requested, was on UI/UX and responsiveness.
-*   Dummy data has been used throughout the application to simulate real content.
-*   The project is built using ReactJS, a JavaScript-based framework, with Vite as the build tool.
-
----
-
 Thank you for the opportunity to work on this assignment. I believe this project effectively showcases my abilities in creating modern, responsive, and user-friendly interfaces.
 
 Havishya
