@@ -26,6 +26,7 @@ This Project was built to replicate the core user interface and user experience 
 ![Large Devices View](https://res.cloudinary.com/dkprubmc9/image/upload/v1748182141/L-1_vy2myt.png)
 
 
+**Extra Large Devices View:**
 
 ![Extra Large Devices View](https://res.cloudinary.com/dkprubmc9/image/upload/v1748181740/D-1_anxvy8.png)
 
@@ -116,13 +117,13 @@ To run this project locally:
 
 ## 📝 Notes on the Assignment
 
-*   This project was completed within the given timeframe, understanding potential commitments.
+*   This project was completed within the given timeframe.
 *   The primary focus, as requested, was on UI/UX and responsiveness.
 *   Dummy data has been used throughout the application to simulate real content.
 *   The project is built using ReactJS, a JavaScript-based framework, with Vite as the build tool.
 
 ---
 
-Thank you for the opportunity to work on this assignment. I believe this project effectively showcases my abilities in front-end development, particularly in creating modern, responsive, and user-friendly interfaces.
+Thank you for the opportunity to work on this assignment. I believe this project effectively showcases my abilities in creating modern, responsive, and user-friendly interfaces.
 
 Havishya
