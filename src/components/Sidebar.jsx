@@ -63,8 +63,7 @@ export function Sidebar() {
     inboxNum.innerHTML = num;
   }
   return (
-
-      <div className={" flex flex-col gap-3 overflow-auto bg-[#fafaf6] border border-gray-200 shadow-sm rounded-lg font-semibold"}>
+      <div className={" flex h-screen flex-col gap-3 overflow-auto bg-[#fafaf6] border border-gray-200 shadow-sm rounded-lg font-semibold"}>
       {/* mobile responsive sidebar */}
       {/* <div className="sidebar w-[200px] h-screen"> */}
       <div className="sidebar-header shadow-sm">

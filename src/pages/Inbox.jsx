@@ -6,7 +6,7 @@ import {SidebarMd} from "../components/sidebar/SidebarMd";
 
 import { Chat } from "./Chat";
 
-export function Inbox() {
+export function Inbox({handleInbox}) {
 
   const inboxMessages = [
     {
@@ -41,22 +41,14 @@ export function Inbox() {
     },
   ];
   function openChat() {
-
-    const inboxEl = document.getElementById("inbox");
-    inboxEl.classList.toggle("hidden")
-    const chatEl = document.getElementById("chat-view");
-    chatEl.classList.toggle("hidden")
+    handleInbox(false);
   }
 
   return (
       <>
-        <div id={"chat-view"} className={"hidden h-screen"}>
-          <Chat />        </div>
-
-
     <div id={"inbox"} className={" flex flex-col gap-3 overflow-auto bg-[#fafaf6] border border-gray-200 shadow-sm rounded-lg " }>
       <div className="flex flex-row items-center shadow-sm ">
-        <div className={"sm"}>
+        <div className={"sm-sidebar"}>
           <SidebarMd/>
         </div>
         <h1 id="inbox-type" className="font-bold text-lg p-3">

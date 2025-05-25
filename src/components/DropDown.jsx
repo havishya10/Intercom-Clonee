@@ -36,7 +36,7 @@ export function DropDown({ title, dropArray , droplistClasses = "" }) {
       {isOpen && (
         <ul>
           {dropArray.map((item, index) => (
-            <li clasName={"text-sm"}  key={index}>
+            <li className={"text-sm"}  key={index}>
               <SidebarItem icon={item.icon} text={item.text} num={item.num} />
             </li>
           ))}

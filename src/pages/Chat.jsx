@@ -9,23 +9,19 @@ import {ChatWindow} from "../components/chat/ChatWindow";
 import {Inbox} from "./Inbox";
 import React from "react";
 
-export function Chat() {
+export function Chat({handleChat}) {
     function openInbox() {
-        const chatEl = document.getElementById("chat");
-        chatEl.classList.toggle("hidden")
-        const inboxEl = document.getElementById("inbox-view");
-        inboxEl.classList.toggle("hidden")
+        handleChat(true);
     }
   return (
       <>
-          <div id={"inbox-view"} className={"hidden h-screen"}>
-              <Inbox />
-          </div>
 
-          <div id={"chat"} className={"w-full h-screen flex bg-white flex-col justify-between"}>
+          <div className={"w-full h-screen flex bg-white flex-col justify-between"}>
       <div className="chat-header flex flex-row justify-between items-center p-3 bg-white shadow-sm">
         <div className="flex flex-row items-center gap-2 ">
-          <div onClick={() => openInbox()} className="cursor-pointer">
+          <div
+              onClick={() => openInbox()}
+              className="cursor-pointer px-3 sm">
             <FaArrowLeft />
           </div>
           <h1 className="text-lg font-bold">Tom Simone</h1>
@@ -42,6 +38,6 @@ export function Chat() {
       </div>
       <Composer />
     </div>
-          </>
+      </>
   );
 }
