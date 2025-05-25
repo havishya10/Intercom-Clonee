@@ -16,7 +16,7 @@ export function Chat({handleChat}) {
   return (
       <>
 
-          <div className={"w-full h-screen flex bg-white flex-col justify-between"}>
+          <div className={"w-full  flex bg-white flex-col justify-between"}>
       <div className="chat-header flex flex-row justify-between items-center p-3 bg-white shadow-sm">
         <div className="flex flex-row items-center gap-2 ">
           <div

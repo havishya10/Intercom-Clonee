@@ -23,7 +23,7 @@ export function Composer() {
           <Markdown />
         </div>
 
-        <div className="flex py-2 px-4 flex-row justify-between items-center">
+        <div className="flex py-5 px-4 flex-row justify-between items-center">
           <div className="flex flex-row gap-2 items-center">
           <span className="icon">
             <AiFillThunderbolt />

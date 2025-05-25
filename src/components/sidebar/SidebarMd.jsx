@@ -9,7 +9,7 @@ export function SidebarMd() {
     <>
       {/* Sidebar Slide-In */}
       <div
-        className={`sidebar overflow-auto 
+        className={` overflow-auto 
                   fixed top-0 left-0 h-screen w-[270px] bg-white z-50 
                   transform transition-transform duration-300 ease-in-out 
                   ${openSidebar ? "translate-x-0" : "-translate-x-full"}

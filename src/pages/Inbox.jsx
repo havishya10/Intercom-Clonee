@@ -46,8 +46,9 @@ export function Inbox({handleInbox}) {
 
   return (
       <>
-    <div id={"inbox"} className={" flex flex-col gap-3 overflow-auto bg-[#fafaf6] border border-gray-200 shadow-sm rounded-lg " }>
-      <div className="flex flex-row items-center shadow-sm ">
+        <div
+            className={"h-full flex flex-col gap-3 overflow-auto bg-[#fafaf6] border-t border-x border-gray-200 shadow-sm rounded-lg "}>
+        <div className="flex flex-row items-center shadow-sm ">
         <div className={"sm-sidebar"}>
           <SidebarMd/>
         </div>
@@ -76,20 +77,23 @@ export function Inbox({handleInbox}) {
         </div>
         <ul className="inbox-messages flex-1 overflow-auto">
           {inboxMessages.map((message, index) => (
-            <li
-                onClick={() => openChat()}
-                key={index} className="py-2">
-              <Message
-                avatar={message.avatar}
-                name={message.name}
-                msg={message.msg}
-                time={message.time}
-              />
-            </li>
+              <li
+                  onClick={() => openChat()}
+                  key={index} className="py-2">
+                <Message
+                    avatar={message.avatar}
+                    name={message.name}
+                    msg={message.msg}
+                    time={message.time}
+                />
+              </li>
           ))}
         </ul>
       </div>
+
     </div>
+
+
       </>
         );
 }
