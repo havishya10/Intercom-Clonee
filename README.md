@@ -1,6 +1,6 @@
 # Intercom Clonee - UI/UX Showcase
 
-This project was built in ~5 days from scratch with no external templates, showcasing raw layout, structure, and responsive skills.It was built to replicate the core user interface and user experience of the Intercom platform and is developed as part of an assignment from BeyondChats, focusing on delivering a high-fidelity, responsive, and engaging UI.
+This project was built in ~5 days from scratch with no external templates. It showcases raw layout logic, structured component design, and responsive behavior. Developed as part of an assignment from BeyondChats, the goal was to replicate the UI/UX of Intercom as closely as possible.
 
 **✨ Live Demo: [https://intercom-clonee.netlify.app](https://intercom-clonee.netlify.app) ✨**
 
@@ -40,7 +40,7 @@ This project was built with the following evaluation criteria in mind:
 1.  **Color Scheme, Theme, UI :**
     *   A clean, modern, and professional color palette inspired by Intercom's aesthetic has been implemented.
     *   The overall theme aims for clarity and ease of use, ensuring a pleasant user experience.
-    *   UI elements are designed to be consistent, recognizable, and visually balanced, contributing to a polished look and feel. Custom icons (via Lucide React) enhance visual appeal and clarity.
+    *   UI elements are designed to be consistent, recognizable, and visually balanced, contributing to a polished look and feel. Custom icons (via React Icons) enhance visual appeal and clarity.
 
 2.  **Desktop UI :**
     *   The application provides a full-featured and well-organized desktop experience.
