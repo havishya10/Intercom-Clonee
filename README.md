@@ -88,7 +88,7 @@ This project was built with the following evaluation criteria in mind:
 
 ---
 
-## ⚙️ Getting Started (Local Development)
+## ⚙️ Project Implementation
 
 To run this project locally:
 
