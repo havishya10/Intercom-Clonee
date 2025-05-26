@@ -1,6 +1,6 @@
 # Intercom Clonee - UI/UX Showcase
 
-This project was built in ~5 days from scratch with no external templates. It showcases raw layout logic, structured component design, and responsive behavior. Developed as part of an assignment from BeyondChats, the goal was to replicate the UI/UX of Intercom as closely as possible.
+This project was built from scratch with no external templates. It showcases raw layout logic, structured component design, and responsive behavior. Developed as part of an assignment from BeyondChats, the goal was to replicate the UI/UX of Intercom as closely as possible.
 
 **✨ Live Demo: [https://intercom-clonee.netlify.app](https://intercom-clonee.netlify.app) ✨**
 
