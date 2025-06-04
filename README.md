@@ -117,4 +117,4 @@ To run this project locally:
 
 Thank you for the opportunity to work on this assignment. I believe this project effectively showcases my abilities in creating modern, responsive, and user-friendly interfaces.
 
-Havishya
+
