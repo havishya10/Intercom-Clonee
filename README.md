@@ -66,7 +66,7 @@ This project was built with the following evaluation criteria in mind:
         *   Thoughtful micro-interactions and smooth animations that make the application feel alive and enjoyable to use.
         *   The successful replication of a complex, real-world application's UI within the given timeframe.
 
-6.  **Coding Best Practices and Readability (10 pts):**
+6.  **Coding Best Practices and Readability:**
     *   **Component-Based Architecture:** The application is built using React, promoting modularity and reusability through well-defined components.
     *   **Clear Naming Conventions:** Variables, functions, and components are named descriptively.
     *   **Consistent Code Style:** Code formatting is maintained consistently (aided by Prettier, if configured).
